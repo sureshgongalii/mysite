@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-dark-900/95 backdrop-blur-sm z-50 border-b border-dark-700">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">
+                    <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="projects.html" class="nav-link text-primary-400">Projects</a>
+                    <a href="workflow.html" class="nav-link">Workflow</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-300" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mt-4 pb-4" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="projects.html" class="nav-link text-primary-400">Projects</a>
+                    <a href="workflow.html" class="nav-link">Workflow</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <h1 class="section-title">My Projects</h1>
+            
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="dl">Deep Learning</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+                <button class="filter-btn" data-filter="cv">Computer Vision</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <!-- Edit Projects Below -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                <!-- Project 1: AI Chatbot -->
+                <div class="card project-card animate-slide-up" data-category="nlp dl">
+                    <div class="h-48 bg-gradient-to-br from-primary-500 to-purple-600 rounded-lg mb-6 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-brain text-6xl text-white"></i>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-white/20 text-white px-2 py-1 rounded-full text-xs">Featured</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI Chatbot System</h3>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Advanced NLP chatbot using transformer models for customer service automation with 
+                        95% accuracy in intent recognition.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-primary-600/20 text-primary-400 rounded text-xs">Python</span>
+                        <span class="px-2 py-1 bg-primary-600/20 text-primary-400 rounded text-xs">Transformers</span>
+                        <span class="px-2 py-1 bg-primary-600/20 text-primary-400 rounded text-xs">FastAPI</span>
+                        <span class="px-2 py-1 bg-primary-600/20 text-primary-400 rounded text-xs">Docker</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="project1.html" class="text-primary-400 hover:text-primary-300 transition-colors">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                        <div class="flex space-x-2">
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Sales Prediction -->
+                <div class="card project-card animate-slide-up" data-category="ml">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-chart-bar text-6xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sales Prediction Model</h3>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Machine learning model predicting sales trends with 95% accuracy using time series 
+                        analysis and ensemble methods.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">Python</span>
+                        <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">XGBoost</span>
+                        <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">Pandas</span>
+                        <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">Plotly</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="project2.html" class="text-primary-400 hover:text-primary-300 transition-colors">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                        <div class="flex space-x-2">
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Computer Vision -->
+                <div class="card project-card animate-slide-up" data-category="cv dl">
+                    <div class="h-48 bg-gradient-to-br from-red-500 to-pink-600 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-eye text-6xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Computer Vision App</h3>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Real-time object detection and classification using deep learning and OpenCV 
+                        with custom trained models.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-red-600/20 text-red-400 rounded text-xs">Python</span>
+                        <span class="px-2 py-1 bg-red-600/20 text-red-400 rounded text-xs">OpenCV</span>
+                        <span class="px-2 py-1 bg-red-600/20 text-red-400 rounded text-xs">YOLO</span>
+                        <span class="px-2 py-1 bg-red-600/20 text-red-400 rounded text-xs">Flask</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="project3.html" class="text-primary-400 hover:text-primary-300 transition-colors">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                        <div class="flex space-x-2">
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Sentiment Analysis -->
+                <div class="card project-card animate-slide-up" data-category="nlp ml">
+                    <div class="h-48 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-comments text-6xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sentiment Analysis Tool</h3>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Multi-language sentiment analysis using BERT and custom models for social media 
+                        monitoring and brand analysis.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-yellow-600/20 text-yellow-400 rounded text-xs">Python</span>
+                        <span class="px-2 py-1 bg-yellow-600/20 text-yellow-400 rounded text-xs">BERT</span>
+                        <span class="px-2 py-1 bg-yellow-600/20 text-yellow-400 rounded text-xs">Streamlit</span>
+                        <span class="px-2 py-1 bg-yellow-600/20 text-yellow-400 rounded text-xs">spaCy</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="project4.html" class="text-primary-400 hover:text-primary-300 transition-colors">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                        <div class="flex space-x-2">
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Recommendation System -->
+                <div class="card project-card animate-slide-up" data-category="ml">
+                    <div class="h-48 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-thumbs-up text-6xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Recommendation Engine</h3>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Collaborative filtering recommendation system for e-commerce platform serving 
+                        personalized product suggestions to 1M+ users.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-indigo-600/20 text-indigo-400 rounded text-xs">Python</span>
+                        <span class="px-2 py-1 bg-indigo-600/20 text-indigo-400 rounded text-xs">Surprise</span>
+                        <span class="px-2 py-1 bg-indigo-600/20 text-indigo-400 rounded text-xs">Redis</span>
+                        <span class="px-2 py-1 bg-indigo-600/20 text-indigo-400 rounded text-xs">AWS</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="project5.html" class="text-primary-400 hover:text-primary-300 transition-colors">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                        <div class="flex space-x-2">
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Data Dashboard -->
+                <div class="card project-card animate-slide-up" data-category="web">
+                    <div class="h-48 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-chart-pie text-6xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Interactive Data Dashboard</h3>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Real-time analytics dashboard built with React and D3.js for business intelligence 
+                        and data visualization.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-teal-600/20 text-teal-400 rounded text-xs">React</span>
+                        <span class="px-2 py-1 bg-teal-600/20 text-teal-400 rounded text-xs">D3.js</span>
+                        <span class="px-2 py-1 bg-teal-600/20 text-teal-400 rounded text-xs">Node.js</span>
+                        <span class="px-2 py-1 bg-teal-600/20 text-teal-400 rounded text-xs">MongoDB</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="project6.html" class="text-primary-400 hover:text-primary-300 transition-colors">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                        <div class="flex space-x-2">
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="btn-secondary" id="load-more-btn">
+                    <i class="fas fa-plus mr-2"></i>Load More Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-800 border-t border-dark-700 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-bold gradient-text mb-4 md:mb-0">
+                    <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:contact@example.com" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 mt-8 pt-8 border-t border-dark-700">
+                <p>&copy; 2024 John Doe. All rights reserved. Built with passion for data science.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Project filtering functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        const categories = card.getAttribute('data-category');
+                        if (categories.includes(filter)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // Load more functionality (placeholder)
+        document.getElementById('load-more-btn').addEventListener('click', () => {
+            alert('More projects coming soon!');
+        });
+    </script>
+    <style>
+        .filter-btn {
+            @apply px-4 py-2 bg-dark-700 text-gray-300 rounded-lg transition-all duration-300 hover:bg-primary-600 hover:text-white;
+        }
+        .filter-btn.active {
+            @apply bg-primary-600 text-white;
+        }
+    </style>
+</body>
+</html>

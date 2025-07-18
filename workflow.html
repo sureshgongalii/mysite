@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow - Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-dark-900/95 backdrop-blur-sm z-50 border-b border-dark-700">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">
+                    <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="workflow.html" class="nav-link text-primary-400">Workflow</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-300" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mt-4 pb-4" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="workflow.html" class="nav-link text-primary-400">Workflow</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Workflow Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <h1 class="section-title">My Data Science Workflow</h1>
+            
+            <!-- Development Tools -->
+            <!-- Edit Development Tools Below -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-primary-400 mb-8 text-center">Development Tools & Environment</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-book text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Jupyter Notebook</h3>
+                        <p class="text-gray-400 text-sm">Primary environment for data exploration, prototyping, and analysis</p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-code text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">VS Code</h3>
+                        <p class="text-gray-400 text-sm">Main IDE for production code, debugging, and version control</p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-python text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">PyCharm</h3>
+                        <p class="text-gray-400 text-sm">Advanced Python development for complex ML projects</p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-git-alt text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Git & GitHub</h3>
+                        <p class="text-gray-400 text-sm">Version control and collaboration for all projects</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Platforms -->
+            <!-- Edit Learning Platforms Below -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-primary-400 mb-8 text-center">Learning Platforms & Resources</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-600 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fab fa-youtube text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">YouTube</h3>
+                                <p class="text-sm text-gray-400">Video tutorials & lectures</p>
+                            </div>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-1">
+                            <li>• 3Blue1Brown (Math concepts)</li>
+                            <li>• StatQuest (Statistics)</li>
+                            <li>• Two Minute Papers (AI research)</li>
+                            <li>• Sentdex (Python tutorials)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-graduation-cap text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">GeeksforGeeks</h3>
+                                <p class="text-sm text-gray-400">Programming & algorithms</p>
+                            </div>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-1">
+                            <li>• Data structures & algorithms</li>
+                            <li>• Python programming guides</li>
+                            <li>• Machine learning tutorials</li>
+                            <li>• Interview preparation</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-laptop text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">Udemy</h3>
+                                <p class="text-sm text-gray-400">Structured courses</p>
+                            </div>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-1">
+                            <li>• Complete ML bootcamps</li>
+                            <li>• Deep learning specializations</li>
+                            <li>• Cloud platform courses</li>
+                            <li>• Project-based learning</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-book-open text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">Coursera</h3>
+                                <p class="text-sm text-gray-400">University-level courses</p>
+                            </div>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-1">
+                            <li>• Andrew Ng's ML course</li>
+                            <li>• Deep Learning specialization</li>
+                            <li>• Google Cloud certifications</li>
+                            <li>• IBM Data Science program</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fab fa-kaggle text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">Kaggle</h3>
+                                <p class="text-sm text-gray-400">Competitions & datasets</p>
+                            </div>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-1">
+                            <li>• ML competitions</li>
+                            <li>• Public datasets</li>
+                            <li>• Community notebooks</li>
+                            <li>• Learn modules</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-gray-600 to-gray-800 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fab fa-medium text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">Medium & Blogs</h3>
+                                <p class="text-sm text-gray-400">Industry insights</p>
+                            </div>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-1">
+                            <li>• Towards Data Science</li>
+                            <li>• Analytics Vidhya</li>
+                            <li>• KDnuggets</li>
+                            <li>• Research papers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Daily Routine -->
+            <!-- Edit Daily Routine Below -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-primary-400 mb-8 text-center">Daily Learning & Work Routine</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="card">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold mb-4 text-green-400">
+                                    <i class="fas fa-sun mr-2"></i>Morning Routine (6:00 - 9:00 AM)
+                                </h3>
+                                <ul class="space-y-2 text-gray-400">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-coffee text-yellow-400 mr-3"></i>
+                                        Coffee + Industry news (30 min)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-book text-blue-400 mr-3"></i>
+                                        Read research papers (45 min)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-code text-green-400 mr-3"></i>
+                                        Code review & planning (45 min)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-dumbbell text-red-400 mr-3"></i>
+                                        Quick workout (30 min)
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-4 text-blue-400">
+                                    <i class="fas fa-laptop mr-2"></i>Work Hours (9:00 AM - 6:00 PM)
+                                </h3>
+                                <ul class="space-y-2 text-gray-400">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-tasks text-purple-400 mr-3"></i>
+                                        Sprint planning & standups
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-brain text-pink-400 mr-3"></i>
+                                        Deep work on ML projects
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-users text-cyan-400 mr-3"></i>
+                                        Team collaboration & reviews
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-chart-line text-orange-400 mr-3"></i>
+                                        Data analysis & modeling
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-4 text-purple-400">
+                                    <i class="fas fa-moon mr-2"></i>Evening Learning (7:00 - 10:00 PM)
+                                </h3>
+                                <ul class="space-y-2 text-gray-400">
+                                    <li class="flex items-center">
+                                        <i class="fab fa-youtube text-red-400 mr-3"></i>
+                                        YouTube tutorials (1 hour)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-project-diagram text-indigo-400 mr-3"></i>
+                                        Personal projects (1.5 hours)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-trophy text-yellow-400 mr-3"></i>
+                                        Kaggle competitions (30 min)
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-4 text-orange-400">
+                                    <i class="fas fa-calendar-week mr-2"></i>Weekend Focus
+                                </h3>
+                                <ul class="space-y-2 text-gray-400">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-graduation-cap text-blue-400 mr-3"></i>
+                                        Online course completion
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-wrench text-gray-400 mr-3"></i>
+                                        Portfolio & project updates
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-network-wired text-green-400 mr-3"></i>
+                                        Networking & community
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Planning Steps -->
+            <!-- Edit Project Planning Below -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-primary-400 mb-8 text-center">Project Planning & Execution Steps</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="space-y-6">
+                        <!-- Step 1 -->
+                        <div class="card">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-white font-bold">1</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-blue-400">Problem Definition & Research</h3>
+                                    <p class="text-gray-400 mb-3">
+                                        Clearly define the business problem, success metrics, and constraints. 
+                                        Research existing solutions and gather domain knowledge.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-blue-600/20 text-blue-400 rounded text-xs">Stakeholder interviews</span>
+                                        <span class="px-2 py-1 bg-blue-600/20 text-blue-400 rounded text-xs">Literature review</span>
+                                        <span class="px-2 py-1 bg-blue-600/20 text-blue-400 rounded text-xs">Success metrics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="card">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-white font-bold">2</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-green-400">Data Collection & Exploration</h3>
+                                    <p class="text-gray-400 mb-3">
+                                        Gather relevant data from various sources, perform initial exploration, 
+                                        and assess data quality and completeness.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">Data sourcing</span>
+                                        <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">EDA</span>
+                                        <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">Data profiling</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="card">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-white font-bold">3</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-yellow-400">Data Preprocessing & Feature Engineering</h3>
+                                    <p class="text-gray-400 mb-3">
+                                        Clean the data, handle missing values, create meaningful features, 
+                                        and prepare datasets for modeling.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-yellow-600/20 text-yellow-400 rounded text-xs">Data cleaning</span>
+                                        <span class="px-2 py-1 bg-yellow-600/20 text-yellow-400 rounded text-xs">Feature creation</span>
+                                        <span class="px-2 py-1 bg-yellow-600/20 text-yellow-400 rounded text-xs">Scaling & encoding</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="card">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-white font-bold">4</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-red-400">Model Development & Training</h3>
+                                    <p class="text-gray-400 mb-3">
+                                        Experiment with different algorithms, tune hyperparameters, 
+                                        and validate model performance using cross-validation.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-red-600/20 text-red-400 rounded text-xs">Algorithm selection</span>
+                                        <span class="px-2 py-1 bg-red-600/20 text-red-400 rounded text-xs">Hyperparameter tuning</span>
+                                        <span class="px-2 py-1 bg-red-600/20 text-red-400 rounded text-xs">Cross-validation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="card">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-white font-bold">5</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-purple-400">Model Evaluation & Testing</h3>
+                                    <p class="text-gray-400 mb-3">
+                                        Thoroughly evaluate model performance on test data, analyze errors, 
+                                        and ensure the model meets business requirements.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-purple-600/20 text-purple-400 rounded text-xs">Performance metrics</span>
+                                        <span class="px-2 py-1 bg-purple-600/20 text-purple-400 rounded text-xs">Error analysis</span>
+                                        <span class="px-2 py-1 bg-purple-600/20 text-purple-400 rounded text-xs">A/B testing</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="card">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <span class="text-white font-bold">6</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-cyan-400">Deployment & Monitoring</h3>
+                                    <p class="text-gray-400 mb-3">
+                                        Deploy the model to production, set up monitoring systems, 
+                                        and establish processes for model maintenance and updates.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-cyan-600/20 text-cyan-400 rounded text-xs">CI/CD pipeline</span>
+                                        <span class="px-2 py-1 bg-cyan-600/20 text-cyan-400 rounded text-xs">Model monitoring</span>
+                                        <span class="px-2 py-1 bg-cyan-600/20 text-cyan-400 rounded text-xs">Performance tracking</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Productivity Tips -->
+            <!-- Edit Productivity Tips Below -->
+            <div>
+                <h2 class="text-2xl font-bold text-primary-400 mb-8 text-center">Productivity Tips & Best Practices</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-clock text-3xl text-blue-400 mb-2"></i>
+                            <h3 class="text-lg font-bold">Time Management</h3>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• Use Pomodoro technique for focused work</li>
+                            <li>• Block calendar for deep work sessions</li>
+                            <li>• Set daily and weekly learning goals</li>
+                            <li>• Regular breaks to avoid burnout</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-code-branch text-3xl text-green-400 mb-2"></i>
+                            <h3 class="text-lg font-bold">Version Control</h3>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• Commit code frequently with clear messages</li>
+                            <li>• Use feature branches for experiments</li>
+                            <li>• Tag important model versions</li>
+                            <li>• Document changes in README files</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-file-alt text-3xl text-purple-400 mb-2"></i>
+                            <h3 class="text-lg font-bold">Documentation</h3>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• Maintain detailed project notebooks</li>
+                            <li>• Document model assumptions and limitations</li>
+                            <li>• Create reproducible analysis workflows</li>
+                            <li>• Write clear code comments</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-users text-3xl text-orange-400 mb-2"></i>
+                            <h3 class="text-lg font-bold">Collaboration</h3>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• Regular code reviews with team</li>
+                            <li>• Share knowledge through presentations</li>
+                            <li>• Participate in data science communities</li>
+                            <li>• Mentor junior team members</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-chart-line text-3xl text-red-400 mb-2"></i>
+                            <h3 class="text-lg font-bold">Continuous Learning</h3>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• Follow latest research papers</li>
+                            <li>• Experiment with new tools and techniques</li>
+                            <li>• Attend conferences and workshops</li>
+                            <li>• Build diverse project portfolio</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-shield-alt text-3xl text-cyan-400 mb-2"></i>
+                            <h3 class="text-lg font-bold">Quality Assurance</h3>
+                        </div>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• Write unit tests for critical functions</li>
+                            <li>• Validate data quality at each step</li>
+                            <li>• Monitor model performance in production</li>
+                            <li>• Implement error handling and logging</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-800 border-t border-dark-700 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-bold gradient-text mb-4 md:mb-0">
+                    <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:contact@example.com" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 mt-8 pt-8 border-t border-dark-700">
+                <p>&copy; 2024 John Doe. All rights reserved. Built with passion for data science.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

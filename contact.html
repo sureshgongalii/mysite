@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-dark-900/95 backdrop-blur-sm z-50 border-b border-dark-700">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">
+                    <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="workflow.html" class="nav-link">Workflow</a>
+                    <a href="contact.html" class="nav-link text-primary-400">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-300" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mt-4 pb-4" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="workflow.html" class="nav-link">Workflow</a>
+                    <a href="contact.html" class="nav-link text-primary-400">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <h1 class="section-title">Get In Touch</h1>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Contact Information -->
+                    <!-- Edit Contact Information Below -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-primary-400 mb-6">Let's Connect</h2>
+                        <p class="text-gray-400 mb-8 text-lg leading-relaxed">
+                            I'm always interested in discussing new opportunities, collaborating on exciting projects, 
+                            or simply connecting with fellow data enthusiasts. Whether you have a project in mind, 
+                            need consultation, or want to explore potential partnerships, I'd love to hear from you.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Email</h3>
+                                    <a href="mailto:john.doe@example.com" class="text-primary-400 hover:text-primary-300 transition-colors">
+                                        john.doe@example.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Phone</h3>
+                                    <a href="tel:+1234567890" class="text-primary-400 hover:text-primary-300 transition-colors">
+                                        +1 (234) 567-8900
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-600 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Location</h3>
+                                    <p class="text-gray-400">San Francisco, CA, USA</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Availability</h3>
+                                    <p class="text-gray-400">Open to new opportunities</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="mt-8">
+                            <h3 class="text-lg font-bold text-gray-300 mb-4">Connect on Social Media</h3>
+                            <div class="flex space-x-4">
+                                <a href="https://linkedin.com" target="_blank" 
+                                   class="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="fab fa-linkedin text-white text-xl"></i>
+                                </a>
+                                <a href="https://github.com" target="_blank" 
+                                   class="w-12 h-12 bg-gradient-to-br from-gray-700 to-gray-800 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="fab fa-github text-white text-xl"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" 
+                                   class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="fab fa-twitter text-white text-xl"></i>
+                                </a>
+                                <a href="https://youtube.com" target="_blank" 
+                                   class="w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="fab fa-youtube text-white text-xl"></i>
+                                </a>
+                                <a href="https://medium.com" target="_blank" 
+                                   class="w-12 h-12 bg-gradient-to-br from-green-600 to-green-700 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="fab fa-medium text-white text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <!-- Edit Contact Form Below -->
+                    <div class="card">
+                        <h2 class="text-2xl font-bold text-primary-400 mb-6">Send a Message</h2>
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="firstName" class="block text-sm font-medium text-gray-300 mb-2">
+                                        First Name *
+                                    </label>
+                                    <input type="text" id="firstName" name="firstName" required
+                                           class="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-100 placeholder-gray-400"
+                                           placeholder="John">
+                                </div>
+                                <div>
+                                    <label for="lastName" class="block text-sm font-medium text-gray-300 mb-2">
+                                        Last Name *
+                                    </label>
+                                    <input type="text" id="lastName" name="lastName" required
+                                           class="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-100 placeholder-gray-400"
+                                           placeholder="Smith">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">
+                                    Email Address *
+                                </label>
+                                <input type="email" id="email" name="email" required
+                                       class="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-100 placeholder-gray-400"
+                                       placeholder="john.smith@example.com">
+                            </div>
+
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-gray-300 mb-2">
+                                    Company/Organization
+                                </label>
+                                <input type="text" id="company" name="company"
+                                       class="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-100 placeholder-gray-400"
+                                       placeholder="Your Company">
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">
+                                    Subject *
+                                </label>
+                                <select id="subject" name="subject" required
+                                        class="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-100">
+                                    <option value="">Select a subject</option>
+                                    <option value="collaboration">Project Collaboration</option>
+                                    <option value="consultation">Data Science Consultation</option>
+                                    <option value="job-opportunity">Job Opportunity</option>
+                                    <option value="speaking">Speaking Engagement</option>
+                                    <option value="mentorship">Mentorship</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-300 mb-2">
+                                    Message *
+                                </label>
+                                <textarea id="message" name="message" rows="6" required
+                                          class="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-100 placeholder-gray-400 resize-none"
+                                          placeholder="Tell me about your project, requirements, or how I can help you..."></textarea>
+                            </div>
+
+                            <div class="flex items-center">
+                                <input type="checkbox" id="newsletter" name="newsletter"
+                                       class="w-4 h-4 text-primary-600 bg-dark-700 border-dark-600 rounded focus:ring-primary-500">
+                                <label for="newsletter" class="ml-2 text-sm text-gray-400">
+                                    Subscribe to my newsletter for data science insights and updates
+                                </label>
+                            </div>
+
+                            <button type="submit" class="w-full btn-primary">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <!-- Edit FAQ Section Below -->
+                <div class="mt-16">
+                    <h2 class="text-2xl font-bold text-primary-400 mb-8 text-center">Frequently Asked Questions</h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="card">
+                            <h3 class="text-lg font-bold mb-3 text-green-400">
+                                <i class="fas fa-question-circle mr-2"></i>What services do you offer?
+                            </h3>
+                            <p class="text-gray-400 text-sm">
+                                I provide data science consulting, machine learning model development, 
+                                data analysis, and mentoring services. I also collaborate on research projects 
+                                and offer technical advisory for startups.
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="text-lg font-bold mb-3 text-blue-400">
+                                <i class="fas fa-clock mr-2"></i>What's your typical response time?
+                            </h3>
+                            <p class="text-gray-400 text-sm">
+                                I typically respond to emails within 24-48 hours during business days. 
+                                For urgent matters, please mention it in your subject line and I'll 
+                                prioritize your message.
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="text-lg font-bold mb-3 text-purple-400">
+                                <i class="fas fa-handshake mr-2"></i>Do you work on freelance projects?
+                            </h3>
+                            <p class="text-gray-400 text-sm">
+                                Yes, I'm open to freelance and consulting opportunities, especially 
+                                for interesting data science projects. I prefer projects that involve 
+                                machine learning, AI, or complex data analysis challenges.
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="text-lg font-bold mb-3 text-orange-400">
+                                <i class="fas fa-graduation-cap mr-2"></i>Do you offer mentoring?
+                            </h3>
+                            <p class="text-gray-400 text-sm">
+                                I offer mentoring for aspiring data scientists and junior professionals. 
+                                This includes career guidance, technical skill development, and project 
+                                portfolio reviews. Contact me to discuss mentoring arrangements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="mt-16 text-center">
+                    <div class="card bg-gradient-to-r from-primary-600/20 to-purple-600/20 border-primary-500/30">
+                        <h2 class="text-2xl font-bold mb-4 gradient-text">Ready to Start Your Data Science Journey?</h2>
+                        <p class="text-gray-400 mb-6 max-w-2xl mx-auto">
+                            Whether you're looking to solve complex business problems with data, 
+                            need guidance on your data science career, or want to collaborate on 
+                            innovative projects, I'm here to help.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="mailto:john.doe@example.com" class="btn-primary">
+                                <i class="fas fa-envelope mr-2"></i>Email Me Directly
+                            </a>
+                            <a href="https://calendly.com" target="_blank" class="btn-secondary">
+                                <i class="fas fa-calendar mr-2"></i>Schedule a Call
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-800 border-t border-dark-700 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-bold gradient-text mb-4 md:mb-0">
+                    <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:contact@example.com" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 mt-8 pt-8 border-t border-dark-700">
+                <p>&copy; 2024 John Doe. All rights reserved. Built with passion for data science.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simple validation
+            if (!data.firstName || !data.lastName || !data.email || !data.subject || !data.message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Simulate form submission
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert('Thank you for your message! I\'ll get back to you soon.');
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

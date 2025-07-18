@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Prediction Model - Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-dark-900/95 backdrop-blur-sm z-50 border-b border-dark-700">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">
+                    <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="workflow.html" class="nav-link">Workflow</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-300" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mt-4 pb-4" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="workflow.html" class="nav-link">Workflow</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <!-- Edit Project Details Below -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <!-- Back Button -->
+            <div class="mb-8">
+                <a href="projects.html" class="text-primary-400 hover:text-primary-300 transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i>Back to Projects
+                </a>
+            </div>
+
+            <!-- Project Header -->
+            <div class="text-center mb-12">
+                <div class="w-32 h-32 bg-gradient-to-br from-green-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-chart-bar text-6xl text-white"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Sales Prediction Model</h1>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Advanced machine learning model predicting sales trends with 95% accuracy using 
+                    time series analysis, ensemble methods, and external market indicators.
+                </p>
+            </div>
+
+            <!-- Project Info Cards -->
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <div class="card text-center">
+                    <i class="fas fa-user-tie text-2xl text-primary-400 mb-2"></i>
+                    <h3 class="font-bold text-gray-300">Role</h3>
+                    <p class="text-gray-400 text-sm">Senior Data Scientist</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-calendar text-2xl text-green-400 mb-2"></i>
+                    <h3 class="font-bold text-gray-300">Duration</h3>
+                    <p class="text-gray-400 text-sm">4 months</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-users text-2xl text-blue-400 mb-2"></i>
+                    <h3 class="font-bold text-gray-300">Team Size</h3>
+                    <p class="text-gray-400 text-sm">3 members</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-chart-line text-2xl text-purple-400 mb-2"></i>
+                    <h3 class="font-bold text-gray-300">Accuracy</h3>
+                    <p class="text-gray-400 text-sm">95% MAPE</p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Main Content -->
+                <div class="lg:col-span-2 space-y-8">
+                    <!-- Project Overview -->
+                    <div class="card">
+                        <h2 class="text-2xl font-bold text-primary-400 mb-4">Project Overview</h2>
+                        <p class="text-gray-400 mb-4">
+                            Developed a comprehensive sales forecasting system for a retail chain with 200+ stores 
+                            across multiple regions. The model predicts daily, weekly, and monthly sales with high 
+                            accuracy, enabling better inventory management and strategic planning.
+                        </p>
+                        <p class="text-gray-400 mb-4">
+                            The system processes historical sales data spanning 5 years, incorporating external factors 
+                            like weather patterns, economic indicators, holidays, and promotional campaigns. It provides 
+                            forecasts at multiple granularities: product-level, store-level, and regional-level predictions.
+                        </p>
+                        <p class="text-gray-400">
+                            The model has been successfully deployed in production and is used daily by business 
+                            stakeholders for inventory planning, budget allocation, and strategic decision-making. 
+                            It has resulted in 20% reduction in inventory costs and 15% improvement in stock availability.
+                        </p>
+                    </div>
+
+                    <!-- Technical Implementation -->
+                    <div class="card">
+                        <h2 class="text-2xl font-bold text-primary-400 mb-4">Technical Implementation</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-300 mb-2">Data Pipeline</h3>
+                                <p class="text-gray-400 text-sm mb-3">
+                                    Automated ETL pipeline processing data from multiple sources including POS systems, 
+                                    weather APIs, economic databases, and promotional calendars. Data is cleaned, 
+                                    validated, and stored in a data warehouse for model training.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-300 mb-2">Feature Engineering</h3>
+                                <p class="text-gray-400 text-sm mb-3">
+                                    Created 100+ features including lag variables, rolling statistics, seasonal decomposition, 
+                                    holiday indicators, weather metrics, and promotional impact scores. Used automated 
+                                    feature selection to identify the most predictive variables.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-300 mb-2">Model Architecture</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Ensemble approach combining XGBoost, LightGBM, and LSTM networks. Used time series 
+                                    cross-validation for model selection and hyperparameter tuning. Implemented separate 
+                                    models for different product categories and seasonal patterns.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="card">
+                        <h2 class="text-2xl font-bold text-primary-400 mb-4">Key Features</h2>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Multi-horizon Forecasting</h3>
+                                    <p class="text-gray-400 text-sm">Predictions for 1-day to 12-week horizons</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Hierarchical Forecasting</h3>
+                                    <p class="text-gray-400 text-sm">Product, store, and regional level predictions</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">External Data Integration</h3>
+                                    <p class="text-gray-400 text-sm">Weather, holidays, and economic indicators</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Confidence Intervals</h3>
+                                    <p class="text-gray-400 text-sm">Uncertainty quantification for risk assessment</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Automated Retraining</h3>
+                                    <p class="text-gray-400 text-sm">Weekly model updates with new data</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Interactive Dashboard</h3>
+                                    <p class="text-gray-400 text-sm">Real-time forecasts and performance monitoring</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Model Performance -->
+                    <div class="card">
+                        <h2 class="text-2xl font-bold text-primary-400 mb-4">Model Performance</h2>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h3 class="text-lg font-bold text-green-400 mb-3">Accuracy Metrics</h3>
+                                <ul class="space-y-2 text-gray-400">
+                                    <li>• MAPE: 5.2% (1-week horizon)</li>
+                                    <li>• RMSE: 12.3% improvement over baseline</li>
+                                    <li>• MAE: 8.7% average error</li>
+                                    <li>• R²: 0.94 correlation coefficient</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-blue-400 mb-3">Business Impact</h3>
+                                <ul class="space-y-2 text-gray-400">
+                                    <li>• 20% reduction in inventory costs</li>
+                                    <li>• 15% improvement in stock availability</li>
+                                    <li>• 30% reduction in stockouts</li>
+                                    <li>• $2M annual cost savings</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Performance Chart Placeholder -->
+                        <div class="mt-6">
+                            <h3 class="text-lg font-bold text-purple-400 mb-3">Forecast vs Actual Sales</h3>
+                            <div class="bg-gradient-to-r from-green-500/20 to-blue-500/20 rounded-lg h-64 flex items-center justify-center border border-green-500/30">
+                                <div class="text-center">
+                                    <i class="fas fa-chart-line text-4xl text-green-400 mb-2"></i>
+                                    <p class="text-gray-400">Interactive Performance Chart</p>
+                                    <p class="text-gray-500 text-sm">Showing model accuracy over time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Challenges & Solutions -->
+                    <div class="card">
+                        <h2 class="text-2xl font-bold text-primary-400 mb-4">Challenges & Solutions</h2>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-red-500 pl-4">
+                                <h3 class="font-bold text-red-400 mb-2">Challenge: Seasonal Variations</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Complex seasonal patterns varying by product category and region made traditional 
+                                    time series methods insufficient.
+                                </p>
+                                <p class="text-green-400 text-sm mt-2">
+                                    <strong>Solution:</strong> Implemented hierarchical seasonal decomposition and 
+                                    category-specific models with automated seasonality detection.
+                                </p>
+                            </div>
+                            
+                            <div class="border-l-4 border-yellow-500 pl-4">
+                                <h3 class="font-bold text-yellow-400 mb-2">Challenge: External Factors</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Incorporating diverse external data sources like weather, holidays, and economic 
+                                    indicators while avoiding overfitting.
+                                </p>
+                                <p class="text-green-400 text-sm mt-2">
+                                    <strong>Solution:</strong> Used feature selection techniques and regularization 
+                                    methods to identify the most predictive external variables.
+                                </p>
+                            </div>
+                            
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <h3 class="font-bold text-blue-400 mb-2">Challenge: Real-time Predictions</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Need for real-time forecasts with low latency while maintaining high accuracy 
+                                    across multiple hierarchical levels.
+                                </p>
+                                <p class="text-green-400 text-sm mt-2">
+                                    <strong>Solution:</strong> Optimized model architecture and implemented efficient 
+                                    caching strategies with pre-computed features.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="space-y-6">
+                    <!-- Technologies Used -->
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-primary-400 mb-4">Technologies Used</h3>
+                        <div class="space-y-3">
+                            <div>
+                                <h4 class="font-bold text-gray-300 mb-2">Programming</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-yellow-600/20 text-yellow-400 rounded text-xs">Python</span>
+                                    <span class="px-2 py-1 bg-blue-600/20 text-blue-400 rounded text-xs">SQL</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-300 mb-2">ML Libraries</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">XGBoost</span>
+                                    <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">LightGBM</span>
+                                    <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">TensorFlow</span>
+                                    <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">Scikit-learn</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-300 mb-2">Data Processing</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-purple-600/20 text-purple-400 rounded text-xs">Pandas</span>
+                                    <span class="px-2 py-1 bg-purple-600/20 text-purple-400 rounded text-xs">NumPy</span>
+                                    <span class="px-2 py-1 bg-purple-600/20 text-purple-400 rounded text-xs">Apache Spark</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-300 mb-2">Visualization</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-red-600/20 text-red-400 rounded text-xs">Plotly</span>
+                                    <span class="px-2 py-1 bg-red-600/20 text-red-400 rounded text-xs">Matplotlib</span>
+                                    <span class="px-2 py-1 bg-red-600/20 text-red-400 rounded text-xs">Seaborn</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-300 mb-2">Infrastructure</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-orange-600/20 text-orange-400 rounded text-xs">AWS</span>
+                                    <span class="px-2 py-1 bg-orange-600/20 text-orange-400 rounded text-xs">Docker</span>
+                                    <span class="px-2 py-1 bg-orange-600/20 text-orange-400 rounded text-xs">Airflow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Links -->
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-primary-400 mb-4">Project Links</h3>
+                        <div class="space-y-3">
+                            <a href="#" class="flex items-center text-gray-400 hover:text-primary-400 transition-colors">
+                                <i class="fab fa-github mr-3"></i>
+                                <span>View Source Code</span>
+                            </a>
+                            <a href="#" class="flex items-center text-gray-400 hover:text-primary-400 transition-colors">
+                                <i class="fas fa-external-link-alt mr-3"></i>
+                                <span>Interactive Dashboard</span>
+                            </a>
+                            <a href="#" class="flex items-center text-gray-400 hover:text-primary-400 transition-colors">
+                                <i class="fas fa-file-pdf mr-3"></i>
+                                <span>Technical Report</span>
+                            </a>
+                            <a href="#" class="flex items-center text-gray-400 hover:text-primary-400 transition-colors">
+                                <i class="fas fa-presentation mr-3"></i>
+                                <span>Presentation Slides</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Model Metrics -->
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-primary-400 mb-4">Key Metrics</h3>
+                        <div class="space-y-4">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-green-400">95%</div>
+                                <div class="text-gray-400 text-sm">Forecast Accuracy</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-blue-400">200+</div>
+                                <div class="text-gray-400 text-sm">Stores Covered</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-purple-400">5K+</div>
+                                <div class="text-gray-400 text-sm">Products Tracked</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-orange-400">$2M</div>
+                                <div class="text-gray-400 text-sm">Annual Savings</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Related Projects -->
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-primary-400 mb-4">Related Projects</h3>
+                        <div class="space-y-3">
+                            <a href="project5.html" class="block p-3 bg-dark-700 rounded-lg hover:bg-dark-600 transition-colors">
+                                <h4 class="font-bold text-gray-300 text-sm">Recommendation Engine</h4>
+                                <p class="text-gray-400 text-xs">ML system for personalized suggestions</p>
+                            </a>
+                            <a href="project6.html" class="block p-3 bg-dark-700 rounded-lg hover:bg-dark-600 transition-colors">
+                                <h4 class="font-bold text-gray-300 text-sm">Data Dashboard</h4>
+                                <p class="text-gray-400 text-xs">Interactive analytics platform</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-800 border-t border-dark-700 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-bold gradient-text mb-4 md:mb-0">
+                    <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:contact@example.com" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 mt-8 pt-8 border-t border-dark-700">
+                <p>&copy; 2024 John Doe. All rights reserved. Built with passion for data science.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

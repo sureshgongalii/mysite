@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-dark-900/95 backdrop-blur-sm z-50 border-b border-dark-700">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">
+                    <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="experience.html" class="nav-link text-primary-400">Experience</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="workflow.html" class="nav-link">Workflow</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-300" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mt-4 pb-4" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="experience.html" class="nav-link text-primary-400">Experience</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="workflow.html" class="nav-link">Workflow</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Experience Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <h1 class="section-title">Work Experience</h1>
+            
+            <!-- Professional Experience -->
+            <!-- Edit Work Experience Below -->
+            <div class="mb-16">
+                <div class="relative">
+                    <!-- Timeline line -->
+                    <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-primary-500 hidden md:block"></div>
+                    
+                    <div class="space-y-12">
+                        <!-- Current Position -->
+                        <div class="relative">
+                            <div class="md:ml-20">
+                                <div class="card">
+                                    <div class="absolute -left-4 top-6 w-8 h-8 bg-primary-500 rounded-full border-4 border-dark-900 hidden md:block"></div>
+                                    <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-4">
+                                        <div>
+                                            <h3 class="text-2xl font-bold text-primary-400">Senior Data Scientist</h3>
+                                            <p class="text-xl text-gray-300">TechCorp Inc.</p>
+                                            <p class="text-gray-400">San Francisco, CA</p>
+                                        </div>
+                                        <div class="text-right mt-2 lg:mt-0">
+                                            <div class="text-gray-400">Jan 2023 - Present</div>
+                                            <div class="text-sm text-green-400">Current Position</div>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-400 mb-4">
+                                        Leading a team of 5 data scientists in developing advanced machine learning solutions 
+                                        for customer analytics and business intelligence. Responsible for end-to-end ML pipeline 
+                                        development and deployment at scale.
+                                    </p>
+                                    <div class="mb-4">
+                                        <h4 class="font-bold text-gray-300 mb-2">Key Achievements:</h4>
+                                        <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                            <li>Increased customer retention by 25% through predictive modeling</li>
+                                            <li>Deployed 15+ ML models to production serving 10M+ users daily</li>
+                                            <li>Reduced model training time by 60% through optimization techniques</li>
+                                            <li>Led cross-functional initiatives resulting in $2M annual cost savings</li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-primary-600/20 text-primary-400 rounded-full text-sm">Python</span>
+                                        <span class="px-3 py-1 bg-primary-600/20 text-primary-400 rounded-full text-sm">TensorFlow</span>
+                                        <span class="px-3 py-1 bg-primary-600/20 text-primary-400 rounded-full text-sm">AWS</span>
+                                        <span class="px-3 py-1 bg-primary-600/20 text-primary-400 rounded-full text-sm">Docker</span>
+                                        <span class="px-3 py-1 bg-primary-600/20 text-primary-400 rounded-full text-sm">Kubernetes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Previous Position -->
+                        <div class="relative">
+                            <div class="md:ml-20">
+                                <div class="card">
+                                    <div class="absolute -left-4 top-6 w-8 h-8 bg-blue-500 rounded-full border-4 border-dark-900 hidden md:block"></div>
+                                    <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-4">
+                                        <div>
+                                            <h3 class="text-2xl font-bold text-blue-400">Data Scientist</h3>
+                                            <p class="text-xl text-gray-300">DataTech Solutions</p>
+                                            <p class="text-gray-400">New York, NY</p>
+                                        </div>
+                                        <div class="text-right mt-2 lg:mt-0">
+                                            <div class="text-gray-400">Jun 2021 - Dec 2022</div>
+                                            <div class="text-sm text-gray-500">1.5 years</div>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-400 mb-4">
+                                        Developed and implemented machine learning models for financial risk assessment 
+                                        and fraud detection. Collaborated with product teams to integrate ML solutions 
+                                        into customer-facing applications.
+                                    </p>
+                                    <div class="mb-4">
+                                        <h4 class="font-bold text-gray-300 mb-2">Key Achievements:</h4>
+                                        <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                            <li>Built fraud detection system reducing false positives by 40%</li>
+                                            <li>Developed credit scoring model with 92% accuracy</li>
+                                            <li>Automated data pipeline processing 1TB+ daily data</li>
+                                            <li>Mentored 3 junior data scientists and interns</li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                                        <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Scikit-learn</span>
+                                        <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">PostgreSQL</span>
+                                        <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Apache Spark</span>
+                                        <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Tableau</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Junior Position -->
+                        <div class="relative">
+                            <div class="md:ml-20">
+                                <div class="card">
+                                    <div class="absolute -left-4 top-6 w-8 h-8 bg-green-500 rounded-full border-4 border-dark-900 hidden md:block"></div>
+                                    <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-4">
+                                        <div>
+                                            <h3 class="text-2xl font-bold text-green-400">Junior Data Analyst</h3>
+                                            <p class="text-xl text-gray-300">Analytics Pro</p>
+                                            <p class="text-gray-400">Boston, MA</p>
+                                        </div>
+                                        <div class="text-right mt-2 lg:mt-0">
+                                            <div class="text-gray-400">Aug 2020 - May 2021</div>
+                                            <div class="text-sm text-gray-500">10 months</div>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-400 mb-4">
+                                        Started career analyzing customer behavior data and creating business intelligence 
+                                        dashboards. Gained hands-on experience with statistical analysis and data visualization 
+                                        while supporting senior team members.
+                                    </p>
+                                    <div class="mb-4">
+                                        <h4 class="font-bold text-gray-300 mb-2">Key Achievements:</h4>
+                                        <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                            <li>Created 20+ interactive dashboards for business stakeholders</li>
+                                            <li>Performed A/B testing analysis improving conversion rates by 15%</li>
+                                            <li>Automated weekly reporting saving 10+ hours per week</li>
+                                            <li>Completed advanced SQL and Python training programs</li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">SQL</span>
+                                        <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">Python</span>
+                                        <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">Excel</span>
+                                        <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">Tableau</span>
+                                        <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">R</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Internship -->
+                        <div class="relative">
+                            <div class="md:ml-20">
+                                <div class="card">
+                                    <div class="absolute -left-4 top-6 w-8 h-8 bg-purple-500 rounded-full border-4 border-dark-900 hidden md:block"></div>
+                                    <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-4">
+                                        <div>
+                                            <h3 class="text-2xl font-bold text-purple-400">Data Science Intern</h3>
+                                            <p class="text-xl text-gray-300">StartupXYZ</p>
+                                            <p class="text-gray-400">Remote</p>
+                                        </div>
+                                        <div class="text-right mt-2 lg:mt-0">
+                                            <div class="text-gray-400">Jun 2019 - Aug 2019</div>
+                                            <div class="text-sm text-gray-500">3 months</div>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-400 mb-4">
+                                        Summer internship focused on exploratory data analysis and building predictive models 
+                                        for user engagement. First professional experience applying academic knowledge to 
+                                        real-world business problems.
+                                    </p>
+                                    <div class="mb-4">
+                                        <h4 class="font-bold text-gray-300 mb-2">Key Achievements:</h4>
+                                        <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                            <li>Built user churn prediction model with 85% accuracy</li>
+                                            <li>Analyzed user behavior patterns from 100K+ data points</li>
+                                            <li>Created data visualization reports for executive team</li>
+                                            <li>Learned industry best practices for data science workflows</li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Python</span>
+                                        <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Pandas</span>
+                                        <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Matplotlib</span>
+                                        <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Jupyter</span>
+                                        <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Git</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Progression -->
+            <!-- Edit Skills Progression Below -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-primary-400 mb-8 text-center">Skills Progression Over Time</h2>
+                <div class="card">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary-400 mb-2">2019</div>
+                            <div class="text-gray-400 text-sm">Started Journey</div>
+                            <div class="mt-3 space-y-1">
+                                <div class="text-xs bg-purple-600/20 text-purple-400 px-2 py-1 rounded">Python Basics</div>
+                                <div class="text-xs bg-purple-600/20 text-purple-400 px-2 py-1 rounded">Statistics</div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-400 mb-2">2020</div>
+                            <div class="text-gray-400 text-sm">Foundation Building</div>
+                            <div class="mt-3 space-y-1">
+                                <div class="text-xs bg-green-600/20 text-green-400 px-2 py-1 rounded">SQL Mastery</div>
+                                <div class="text-xs bg-green-600/20 text-green-400 px-2 py-1 rounded">Data Viz</div>
+                                <div class="text-xs bg-green-600/20 text-green-400 px-2 py-1 rounded">ML Basics</div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-400 mb-2">2021</div>
+                            <div class="text-gray-400 text-sm">Advanced Skills</div>
+                            <div class="mt-3 space-y-1">
+                                <div class="text-xs bg-blue-600/20 text-blue-400 px-2 py-1 rounded">Deep Learning</div>
+                                <div class="text-xs bg-blue-600/20 text-blue-400 px-2 py-1 rounded">Big Data</div>
+                                <div class="text-xs bg-blue-600/20 text-blue-400 px-2 py-1 rounded">Cloud Platforms</div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary-400 mb-2">2023</div>
+                            <div class="text-gray-400 text-sm">Leadership & MLOps</div>
+                            <div class="mt-3 space-y-1">
+                                <div class="text-xs bg-primary-600/20 text-primary-400 px-2 py-1 rounded">Team Leadership</div>
+                                <div class="text-xs bg-primary-600/20 text-primary-400 px-2 py-1 rounded">MLOps</div>
+                                <div class="text-xs bg-primary-600/20 text-primary-400 px-2 py-1 rounded">Architecture</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommendations -->
+            <!-- Edit Recommendations Below -->
+            <div>
+                <h2 class="text-2xl font-bold text-primary-400 mb-8 text-center">Recommendations</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" 
+                                 alt="Sarah Johnson" 
+                                 class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <h3 class="font-bold">Sarah Johnson</h3>
+                                <p class="text-primary-400 text-sm">VP of Engineering, TechCorp</p>
+                                <div class="flex text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 text-sm italic">
+                            "John is an exceptional data scientist with strong leadership skills. His ability to translate 
+                            complex technical concepts into business value is remarkable. He consistently delivers 
+                            high-quality solutions and mentors team members effectively."
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" 
+                                 alt="Michael Chen" 
+                                 class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <h3 class="font-bold">Michael Chen</h3>
+                                <p class="text-primary-400 text-sm">CTO, DataTech Solutions</p>
+                                <div class="flex text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 text-sm italic">
+                            "Working with John was a pleasure. His expertise in machine learning and his collaborative 
+                            approach made him an invaluable team member. The fraud detection system he built saved 
+                            our company millions in potential losses."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-800 border-t border-dark-700 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-bold gradient-text mb-4 md:mb-0">
+                    <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:contact@example.com" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 mt-8 pt-8 border-t border-dark-700">
+                <p>&copy; 2024 John Doe. All rights reserved. Built with passion for data science.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

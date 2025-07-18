@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Vision App - Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-dark-900/95 backdrop-blur-sm z-50 border-b border-dark-700">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">
+                    <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="workflow.html" class="nav-link">Workflow</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-300" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mt-4 pb-4" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="workflow.html" class="nav-link">Workflow</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <!-- Edit Project Details Below -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <!-- Back Button -->
+            <div class="mb-8">
+                <a href="projects.html" class="text-primary-400 hover:text-primary-300 transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i>Back to Projects
+                </a>
+            </div>
+
+            <!-- Project Header -->
+            <div class="text-center mb-12">
+                <div class="w-32 h-32 bg-gradient-to-br from-red-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-eye text-6xl text-white"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Computer Vision App</h1>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Real-time object detection and classification system using deep learning and OpenCV 
+                    with custom trained models for industrial quality control and security applications.
+                </p>
+            </div>
+
+            <!-- Project Info Cards -->
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <div class="card text-center">
+                    <i class="fas fa-user-tie text-2xl text-primary-400 mb-2"></i>
+                    <h3 class="font-bold text-gray-300">Role</h3>
+                    <p class="text-gray-400 text-sm">Computer Vision Engineer</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-calendar text-2xl text-green-400 mb-2"></i>
+                    <h3 class="font-bold text-gray-300">Duration</h3>
+                    <p class="text-gray-400 text-sm">8 months</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-users text-2xl text-blue-400 mb-2"></i>
+                    <h3 class="font-bold text-gray-300">Team Size</h3>
+                    <p class="text-gray-400 text-sm">4 members</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-tachometer-alt text-2xl text-purple-400 mb-2"></i>
+                    <h3 class="font-bold text-gray-300">Performance</h3>
+                    <p class="text-gray-400 text-sm">30 FPS real-time</p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Main Content -->
+                <div class="lg:col-span-2 space-y-8">
+                    <!-- Project Overview -->
+                    <div class="card">
+                        <h2 class="text-2xl font-bold text-primary-400 mb-4">Project Overview</h2>
+                        <p class="text-gray-400 mb-4">
+                            Developed a comprehensive computer vision application for real-time object detection, 
+                            classification, and tracking. The system is designed for industrial quality control, 
+                            security monitoring, and automated inspection processes across multiple industries.
+                        </p>
+                        <p class="text-gray-400 mb-4">
+                            The application processes live video streams from multiple cameras simultaneously, 
+                            detecting and classifying objects with high accuracy while maintaining real-time performance. 
+                            It includes custom-trained models for specific use cases and a user-friendly interface 
+                            for configuration and monitoring.
+                        </p>
+                        <p class="text-gray-400">
+                            Successfully deployed in production environments including manufacturing facilities, 
+                            retail stores, and security installations. The system has processed over 1 million 
+                            images and achieved 98% accuracy in object detection tasks.
+                        </p>
+                    </div>
+
+                    <!-- Technical Implementation -->
+                    <div class="card">
+                        <h2 class="text-2xl font-bold text-primary-400 mb-4">Technical Implementation</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-300 mb-2">Model Architecture</h3>
+                                <p class="text-gray-400 text-sm mb-3">
+                                    Implemented YOLOv8 for real-time object detection with custom modifications for 
+                                    specific use cases. Fine-tuned pre-trained models on domain-specific datasets 
+                                    and optimized for edge deployment using TensorRT and ONNX.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-300 mb-2">Video Processing Pipeline</h3>
+                                <p class="text-gray-400 text-sm mb-3">
+                                    Multi-threaded video processing pipeline using OpenCV for frame capture, 
+                                    preprocessing, and post-processing. Implemented efficient memory management 
+                                    and GPU acceleration for optimal performance.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-300 mb-2">User Interface</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Built responsive web interface using Flask and React for real-time monitoring, 
+                                    configuration management, and analytics visualization. Includes mobile-responsive 
+                                    design for remote monitoring capabilities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="card">
+                        <h2 class="text-2xl font-bold text-primary-400 mb-4">Key Features</h2>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Real-time Detection</h3>
+                                    <p class="text-gray-400 text-sm">30+ FPS processing with sub-100ms latency</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Multi-camera Support</h3>
+                                    <p class="text-gray-400 text-sm">Simultaneous processing of up to 16 camera feeds</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Custom Model Training</h3>
+                                    <p class="text-gray-400 text-sm">Easy retraining for new object classes</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Object Tracking</h3>
+                                    <p class="text-gray-400 text-sm">Multi-object tracking with unique ID assignment</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Alert System</h3>
+                                    <p class="text-gray-400 text-sm">Configurable alerts for specific detection events</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-gray-300">Analytics Dashboard</h3>
+                                    <p class="text-gray-400 text-sm">Real-time statistics and historical analysis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Use Cases -->
+                    <div class="card">
+                        <h2 class="text-2xl font-bold text-primary-400 mb-4">Use Cases & Applications</h2>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h3 class="text-lg font-bold text-blue-400 mb-3">
+                                    <i class="fas fa-industry mr-2"></i>Manufacturing
+                                </h3>
+                                <ul class="space-y-2 text-gray-400 text-sm">
+                                    <li>• Quality control and defect detection</li>
+                                    <li>• Assembly line monitoring</li>
+                                    <li>• Safety compliance verification</li>
+                                    <li>• Inventory tracking and counting</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-green-400 mb-3">
+                                    <i class="fas fa-shield-alt mr-2"></i>Security
+                                </h3>
+                                <ul class="space-y-2 text-gray-400 text-sm">
+                                    <li>• Intrusion detection and monitoring</li>
+                                    <li>• Unauthorized access prevention</li>
+                                    <li>• Suspicious behavior identification</li>
+                                    <li>• Perimeter security automation</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-400 mb-3">
+                                    <i class="fas fa-store mr-2"></i>Retail
+                                </h3>
+                                <ul class="space-y-2 text-gray-400 text-sm">
+                                    <li>• Customer behavior analysis</li>
+                                    <li>• Inventory management automation</li>
+                                    <li>• Theft prevention and detection</li>
+                                    <li>• Queue management optimization</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-orange-400 mb-3">
+                                    <i class="fas fa-car mr-2"></i>Transportation
+                                </h3>
+                                <ul class="space-y-2 text-gray-400 text-sm">
+                                    <li>• Traffic monitoring and analysis</li>
+                                    <li>• License plate recognition</li>
+                                    <li>• Parking space management</li>
+                                    <li>• Vehicle classification and counting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Metrics -->
+                    <div class="card">
+                        <h2 class="text-2xl font-bold text-primary-400 mb-4">Performance Metrics</h2>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-green-400 mb-2">98.2%</div>
+                                <div class="text-gray-400">Detection Accuracy</div>
+                                <div class="text-gray-500 text-sm">mAP@0.5 score</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-400 mb-2">32 FPS</div>
+                                <div class="text-gray-400">Processing Speed</div>
+                                <div class="text-gray-500 text-sm">Real-time performance</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-purple-400 mb-2">85ms</div>
+                                <div class="text-gray-400">Average Latency</div>
+                                <div class="text-gray-500 text-sm">End-to-end processing</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Performance Comparison Chart -->
+                        <div class="mt-6">
+                            <h3 class="text-lg font-bold text-primary-400 mb-3">Model Comparison</h3>
+                            <div class="bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-lg h-48 flex items-center justify-center border border-red-500/30">
+                                <div class="text-center">
+                                    <i class="fas fa-chart-bar text-4xl text-red-400 mb-2"></i>
+                                    <p class="text-gray-400">Performance Comparison Chart</p>
+                                    <p class="text-gray-500 text-sm">YOLOv8 vs other detection models</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="space-y-6">
+                    <!-- Technologies Used -->
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-primary-400 mb-4">Technologies Used</h3>
+                        <div class="space-y-3">
+                            <div>
+                                <h4 class="font-bold text-gray-300 mb-2">Deep Learning</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-orange-600/20 text-orange-400 rounded text-xs">PyTorch</span>
+                                    <span class="px-2 py-1 bg-orange-600/20 text-orange-400 rounded text-xs">YOLOv8</span>
+                                    <span class="px-2 py-1 bg-orange-600/20 text-orange-400 rounded text-xs">TensorRT</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-300 mb-2">Computer Vision</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-blue-600/20 text-blue-400 rounded text-xs">OpenCV</span>
+                                    <span class="px-2 py-1 bg-blue-600/20 text-blue-400 rounded text-xs">PIL</span>
+                                    <span class="px-2 py-1 bg-blue-600/20 text-blue-400 rounded text-xs">Albumentations</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-300 mb-2">Backend</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">Python</span>
+                                    <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">Flask</span>
+                                    <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">FastAPI</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-300 mb-2">Frontend</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-cyan-600/20 text-cyan-400 rounded text-xs">React</span>
+                                    <span class="px-2 py-1 bg-cyan-600/20 text-cyan-400 rounded text-xs">WebRTC</span>
+                                    <span class="px-2 py-1 bg-cyan-600/20 text-cyan-400 rounded text-xs">Socket.IO</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-300 mb-2">Deployment</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-purple-600/20 text-purple-400 rounded text-xs">Docker</span>
+                                    <span class="px-2 py-1 bg-purple-600/20 text-purple-400 rounded text-xs">NVIDIA Jetson</span>
+                                    <span class="px-2 py-1 bg-purple-600/20 text-purple-400 rounded text-xs">AWS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Links -->
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-primary-400 mb-4">Project Links</h3>
+                        <div class="space-y-3">
+                            <a href="#" class="flex items-center text-gray-400 hover:text-primary-400 transition-colors">
+                                <i class="fab fa-github mr-3"></i>
+                                <span>Source Code</span>
+                            </a>
+                            <a href="#" class="flex items-center text-gray-400 hover:text-primary-400 transition-colors">
+                                <i class="fas fa-external-link-alt mr-3"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="#" class="flex items-center text-gray-400 hover:text-primary-400 transition-colors">
+                                <i class="fas fa-play mr-3"></i>
+                                <span>Demo Video</span>
+                            </a>
+                            <a href="#" class="flex items-center text-gray-400 hover:text-primary-400 transition-colors">
+                                <i class="fas fa-download mr-3"></i>
+                                <span>Model Weights</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- System Requirements -->
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-primary-400 mb-4">System Requirements</h3>
+                        <div class="space-y-3">
+                            <div>
+                                <h4 class="font-bold text-gray-300 text-sm">Minimum</h4>
+                                <ul class="text-gray-400 text-xs space-y-1">
+                                    <li>• NVIDIA GTX 1060 6GB</li>
+                                    <li>• 8GB RAM</li>
+                                    <li>• Intel i5 or equivalent</li>
+                                    <li>• USB 3.0 camera</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-300 text-sm">Recommended</h4>
+                                <ul class="text-gray-400 text-xs space-y-1">
+                                    <li>• NVIDIA RTX 3070 8GB+</li>
+                                    <li>• 16GB RAM</li>
+                                    <li>• Intel i7 or equivalent</li>
+                                    <li>• IP cameras with RTSP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detection Classes -->
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-primary-400 mb-4">Supported Objects</h3>
+                        <div class="space-y-2">
+                            <div class="flex flex-wrap gap-1">
+                                <span class="px-2 py-1 bg-red-600/20 text-red-400 rounded text-xs">Person</span>
+                                <span class="px-2 py-1 bg-blue-600/20 text-blue-400 rounded text-xs">Vehicle</span>
+                                <span class="px-2 py-1 bg-green-600/20 text-green-400 rounded text-xs">Animal</span>
+                            </div>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="px-2 py-1 bg-purple-600/20 text-purple-400 rounded text-xs">Package</span>
+                                <span class="px-2 py-1 bg-yellow-600/20 text-yellow-400 rounded text-xs">Tool</span>
+                                <span class="px-2 py-1 bg-pink-600/20 text-pink-400 rounded text-xs">Equipment</span>
+                            </div>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="px-2 py-1 bg-indigo-600/20 text-indigo-400 rounded text-xs">Defect</span>
+                                <span class="px-2 py-1 bg-teal-600/20 text-teal-400 rounded text-xs">Product</span>
+                                <span class="px-2 py-1 bg-orange-600/20 text-orange-400 rounded text-xs">Custom</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-500 text-xs mt-3">
+                            + Easy addition of custom object classes through retraining
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-800 border-t border-dark-700 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-bold gradient-text mb-4 md:mb-0">
+                    <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:contact@example.com" class="text-gray-400 hover:text-primary-400 transition-colors text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 mt-8 pt-8 border-t border-dark-700">
+                <p>&copy; 2024 John Doe. All rights reserved. Built with passion for data science.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

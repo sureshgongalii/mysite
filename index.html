@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm z-50 border-b border-slate-700">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-blue-400">
+                    <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link active text-white hover:text-blue-400">Home</a>
+                    <a href="skills.html" class="nav-link text-white hover:text-blue-400">Skills</a>
+                    <a href="education.html" class="nav-link text-white hover:text-blue-400">Education</a>
+                    <a href="experience.html" class="nav-link text-white hover:text-blue-400">Experience</a>
+                    <a href="projects.html" class="nav-link text-white hover:text-blue-400">Projects</a>
+                    <a href="workflow.html" class="nav-link text-white hover:text-blue-400">Workflow</a>
+                    <a href="contact.html" class="nav-link text-white hover:text-blue-400">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu md:hidden mt-4 pb-4" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-white hover:text-blue-400">Home</a>
+                    <a href="skills.html" class="text-white hover:text-blue-400">Skills</a>
+                    <a href="education.html" class="text-white hover:text-blue-400">Education</a>
+                    <a href="experience.html" class="text-white hover:text-blue-400">Experience</a>
+                    <a href="projects.html" class="text-white hover:text-blue-400">Projects</a>
+                    <a href="workflow.html" class="text-white hover:text-blue-400">Workflow</a>
+                    <a href="contact.html" class="text-white hover:text-blue-400">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Edit Hero Content Below -->
+    <section class="min-h-screen flex items-center justify-center pt-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="animate-fade-in">
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" 
+                     alt="Profile Picture" 
+                     class="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-blue-400 animate-float">
+                
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                    John Doe
+                </h1>
+                
+                <h2 class="text-2xl md:text-3xl text-slate-300 mb-8">
+                    Data Scientist & Machine Learning Engineer
+                </h2>
+                
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+                    Passionate about transforming data into actionable insights. Specialized in machine learning, 
+                    deep learning, and statistical analysis with 5+ years of experience in building data-driven solutions.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="projects.html" class="btn-primary px-8 py-4 rounded-lg text-white font-semibold inline-flex items-center">
+                        <i class="fas fa-rocket mr-2"></i>
+                        View My Projects
+                    </a>
+                    <a href="contact.html" class="border-2 border-blue-400 text-blue-400 px-8 py-4 rounded-lg font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300 inline-flex items-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <!-- Edit About Content Below -->
+    <section class="py-20 bg-slate-800/50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white">About Me</h2>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="animate-slide-up">
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-400">My Journey</h3>
+                        <p class="text-slate-300 mb-6 leading-relaxed">
+                            I'm a passionate data scientist with a strong background in mathematics and computer science. 
+                            My journey began with a fascination for patterns in data and has evolved into expertise in 
+                            machine learning, artificial intelligence, and statistical modeling.
+                        </p>
+                        <p class="text-slate-300 mb-6 leading-relaxed">
+                            I specialize in developing end-to-end machine learning solutions, from data preprocessing 
+                            and feature engineering to model deployment and monitoring. My experience spans across 
+                            various industries including finance, healthcare, and e-commerce.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="bg-blue-500/20 text-blue-300 px-4 py-2 rounded-full text-sm">Python</span>
+                            <span class="bg-green-500/20 text-green-300 px-4 py-2 rounded-full text-sm">Machine Learning</span>
+                            <span class="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm">Deep Learning</span>
+                            <span class="bg-yellow-500/20 text-yellow-300 px-4 py-2 rounded-full text-sm">Data Visualization</span>
+                        </div>
+                    </div>
+                    
+                    <div class="animate-slide-up">
+                        <div class="bg-slate-700/50 p-8 rounded-xl">
+                            <h3 class="text-2xl font-semibold mb-6 text-blue-400">Quick Stats</h3>
+                            <div class="space-y-6">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-slate-300">Projects Completed</span>
+                                    <span class="text-2xl font-bold text-white">50+</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-slate-300">Years Experience</span>
+                                    <span class="text-2xl font-bold text-white">5+</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-slate-300">Technologies Mastered</span>
+                                    <span class="text-2xl font-bold text-white">20+</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-slate-300">Certifications</span>
+                                    <span class="text-2xl font-bold text-white">8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <!-- Edit Featured Projects Below -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white">Featured Projects</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-slate-800/50 p-6 rounded-xl">
+                    <div class="mb-4">
+                        <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             alt="AI Chatbot" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-white">AI-Powered Chatbot</h3>
+                    <p class="text-slate-400 mb-4">
+                        Developed an intelligent chatbot using NLP and deep learning for customer service automation.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">Python</span>
+                        <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-xs">TensorFlow</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-xs">NLP</span>
+                    </div>
+                    <a href="project1.html" class="text-blue-400 hover:text-blue-300 font-semibold">
+                        View Details <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="card-hover bg-slate-800/50 p-6 rounded-xl">
+                    <div class="mb-4">
+                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             alt="Sales Prediction" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-white">Sales Prediction Model</h3>
+                    <p class="text-slate-400 mb-4">
+                        Built a machine learning model to predict sales trends with 95% accuracy using time series analysis.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">Python</span>
+                        <span class="bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full text-xs">Scikit-learn</span>
+                        <span class="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs">Time Series</span>
+                    </div>
+                    <a href="project2.html" class="text-blue-400 hover:text-blue-300 font-semibold">
+                        View Details <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="card-hover bg-slate-800/50 p-6 rounded-xl">
+                    <div class="mb-4">
+                        <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             alt="Computer Vision" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-white">Computer Vision System</h3>
+                    <p class="text-slate-400 mb-4">
+                        Created an object detection system for autonomous vehicles using deep learning and OpenCV.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">Python</span>
+                        <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-xs">OpenCV</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-xs">YOLO</span>
+                    </div>
+                    <a href="project3.html" class="text-blue-400 hover:text-blue-300 font-semibold">
+                        View Details <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="projects.html" class="btn-primary px-8 py-4 rounded-lg text-white font-semibold inline-flex items-center">
+                    <i class="fas fa-folder-open mr-2"></i>
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Edit Footer Content Below -->
+    <footer class="bg-slate-900 py-12 border-t border-slate-700">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-400 mb-4">
+                        <i class="fas fa-chart-line mr-2"></i>DataSci Portfolio
+                    </h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Transforming data into actionable insights through innovative machine learning solutions.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="skills.html" class="block text-slate-400 hover:text-blue-400 transition-colors">Skills</a>
+                        <a href="projects.html" class="block text-slate-400 hover:text-blue-400 transition-colors">Projects</a>
+                        <a href="experience.html" class="block text-slate-400 hover:text-blue-400 transition-colors">Experience</a>
+                        <a href="contact.html" class="block text-slate-400 hover:text-blue-400 transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Connect With Me</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com" class="text-slate-400 hover:text-blue-400 text-2xl transition-colors">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="text-slate-400 hover:text-blue-400 text-2xl transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://youtube.com" class="text-slate-400 hover:text-blue-400 text-2xl transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://twitter.com" class="text-slate-400 hover:text-blue-400 text-2xl transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-700 mt-8 pt-8 text-center">
+                <p class="text-slate-400">
+                    © 2024 John Doe. All rights reserved. Built with passion for data science.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
